@@ -7,7 +7,7 @@ console.log(SimpleLightbox);
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
 
-const galleryContainer = document.querySelector('.gallery');
+const gallery = document.querySelector('.gallery');
 const galleryCardsSet = createGallery(galleryItems);
 
 function createGallery(galleryItems) {
@@ -24,9 +24,9 @@ function createGallery(galleryItems) {
     .join('');
 }
 
-galleryContainer.insertAdjacentHTML('beforeend', galleryCardsSet);
+gallery.insertAdjacentHTML('beforeend', galleryCardsSet);
 
-const lightbox = new SimpleLightbox('.gallery a', {
+new SimpleLightbox('.gallery a', {
   caption: true,
   captionsData: 'alt',
   captionDelay: 250,
