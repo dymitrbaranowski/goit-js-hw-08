@@ -20,4 +20,4 @@ if (localStorage.getltem('videoplayer-current-time')) {
   .catch(function (error) {
     console.error('error');
   });
-}
+};
